@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="while app 2"/>
+        <attribute name="authors" value="IT-Park"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-04 05:31:18 PM"/>
+        <attribute name="created" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMS0wNDswNTowMDoxMCBQTTsyODk1"/>
+        <attribute name="edited" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMS0wNDswNTozMToxOCBQTTsxOzMwMTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;So'zni kiriting&quot;" newline="True"/>
+            <declare name="word" type="String" array="False" size=""/>
+            <input variable="word"/>
+            <declare name="length" type="Integer" array="False" size=""/>
+            <assign variable="length" expression="Len(word)-1"/>
+            <declare name="result" type="String" array="False" size=""/>
+            <assign variable="result" expression="&quot;Natija &quot;"/>
+            <while expression="length&gt;=0">
+                <assign variable="result" expression="result &amp; Char(word, length)"/>
+                <assign variable="length" expression="length-1"/>
+            </while>
+            <output expression="result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

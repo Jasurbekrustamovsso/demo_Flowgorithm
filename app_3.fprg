@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="app_3"/>
+        <attribute name="authors" value="IT-Park"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-02 03:28:45 PM"/>
+        <attribute name="created" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMC0zMTswMzo1NToxMSBQTTsyOTAz"/>
+        <attribute name="edited" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMS0wMjswMzoyODo0NSBQTTsxOzMwMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Ism" type="String" array="False" size=""/>
+            <declare name="Familya" type="String" array="False" size=""/>
+            <declare name="Yil" type="Integer" array="False" size=""/>
+            <declare name="Yosh" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ismingni kirit!&quot;" newline="True"/>
+            <input variable="Ism"/>
+            <output expression="&quot;Familyangni kirit&quot;" newline="True"/>
+            <input variable="Familya"/>
+            <output expression="&quot;Tugilgan yilingni kirit&quot;" newline="True"/>
+            <input variable="Yil"/>
+            <assign variable="Yosh" expression="2026 - Yil"/>
+            <output expression="&quot;Sening to'liq isming &quot; &amp; Ism &amp; &quot; &quot; &amp; Familya &amp; &quot;. Sen &quot; &amp; Yosh &amp; &quot; dasan&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

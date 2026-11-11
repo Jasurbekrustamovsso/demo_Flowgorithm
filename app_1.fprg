@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="app_1"/>
+        <attribute name="authors" value="IT-Park"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-30 05:24:44 PM"/>
+        <attribute name="created" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMC0zMDswNDo0NTozOSBQTTsyOTEy"/>
+        <attribute name="edited" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMC0zMDswNToyNDo0NCBQTTsxOzMwMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable=""/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="while loop app"/>
+        <attribute name="authors" value="IT-Park"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-04 05:00:03 PM"/>
+        <attribute name="created" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMS0wNDswNDo0NTozNSBQTTsyOTEw"/>
+        <attribute name="edited" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMS0wNDswNTowMDowMyBQTTsxOzMwMDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <output expression="&quot;Sonni kiriting&quot;" newline="True"/>
+            <input variable="number"/>
+            <while expression="number!=0">
+                <assign variable="total" expression="total+number"/>
+                <assign variable="count" expression="count+1"/>
+                <output expression="&quot;sonni kiriting&quot;" newline="True"/>
+                <input variable="number"/>
+            </while>
+            <output expression="&quot;Yig'indi = &quot; &amp; total" newline="True"/>
+            <output expression="&quot;Sonlar soni = &quot; &amp; count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

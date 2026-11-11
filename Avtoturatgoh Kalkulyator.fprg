@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Avtoturatgoh Kalkulyator"/>
+        <attribute name="authors" value="IT-Park"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-05 11:47:21 AM"/>
+        <attribute name="created" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMS0wNTsxMToyNTowNiBBTTsyODkw"/>
+        <attribute name="edited" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMS0wNTsxMTo0NzoyMSBBTTsxOzI5OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="VehicleType" type="String" array="False" size=""/>
+            <declare name="Hours" type="Integer" array="False" size=""/>
+            <declare name="isVIP" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Transport turini kiriting&quot;" newline="True"/>
+            <input variable="VehicleType"/>
+            <output expression="&quot;Nechchi soat turadi&quot;" newline="True"/>
+            <input variable="Hours"/>
+            <output expression="&quot;Vip mizojmi&quot;" newline="True"/>
+            <input variable="isVip"/>
+            <declare name="Umumiymiqdor" type="Integer" array="False" size=""/>
+            <if expression="VehicleType=&quot;car&quot;">
+                <then>
+                    <assign variable="Umumiymiqdor" expression="10000"/>
+                    <if expression="Hours&gt;2">
+                        <then>
+                            <assign variable="Umumiymiqdor" expression="Umumiymiqdor+(Hours-2)*4000"/>
+                            <if expression="Hours&gt;8">
+                                <then>
+                                    <assign variable="Umumiymiqdor" expression="Umumiymiqdor-Umumiymiqdor*0.15"/>
+                                    <if expression="isVIP=True">
+                                        <then>
+                                            <assign variable="Umumiymiqdor" expression="Umumiymiqdor-Umumiymiqdor*0.1"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <if expression="VehicleType=&quot;Suv&quot;">
+                        <then>
+                            <assign variable="Umumiymiqdor" expression="15000"/>
+                            <if expression="Hours&gt;2">
+                                <then>
+                                    <assign variable="Umumiymiqdor" expression="Umumiymiqdor+(Hours-2)*6000"/>
+                                    <if expression="Hours&gt;8">
+                                        <then>
+                                            <assign variable="Umumiymiqdor" expression="Umumiymiqdor-Umumiymiqdor*0.15"/>
+                                            <if expression="isVIP=True">
+                                                <then>
+                                                    <assign variable="Umumiymiqdor" expression="Umumiymiqdor-Umumiymiqdor*0.1"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="VehicleType=&quot;Truck&quot;">
+                                <then>
+                                    <assign variable="Umumiymiqdor" expression="25000"/>
+                                    <if expression="Hours&gt;2">
+                                        <then>
+                                            <assign variable="Umumiymiqdor" expression="Umumiymiqdor+(Hours-2)*10000"/>
+                                            <if expression="Hours&gt;8">
+                                                <then>
+                                                    <assign variable="Umumiymiqdor" expression="Umumiymiqdor-Umumiymiqdor*0.15"/>
+                                                    <if expression="isVIP=True">
+                                                        <then>
+                                                            <assign variable="Umumiymiqdor" expression="Umumiymiqdor-Umumiymiqdor*0.1"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Xato transport turi&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="Umumiymiqdor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

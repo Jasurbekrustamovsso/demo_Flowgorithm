@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1 dan N gacha bolgan toq sonlar yigindisi"/>
+        <attribute name="authors" value="IT-Park"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-07 03:10:19 PM"/>
+        <attribute name="created" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMS0wNzsxMToyMTo0MiBBTTsyODg4"/>
+        <attribute name="edited" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMS0wNzswMzoxMDoxOSBQTTsxOzMwMTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Son" type="Integer" array="False" size=""/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <output expression="&quot;Oxirgi sonni kiriting&quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="Natija" type="Integer" array="False" size=""/>
+            <assign variable="Natija" expression="0"/>
+            <for variable="Son" start="1" end="N" direction="inc" step="1">
+                <if expression="Son%2=1">
+                    <then>
+                        <assign variable="Natija" expression="Natija+Son"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="Natija" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

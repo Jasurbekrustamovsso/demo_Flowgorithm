@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="app_2"/>
+        <attribute name="authors" value="IT-Park"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-31 11:58:21 AM"/>
+        <attribute name="created" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMC0zMTsxMToxNTowMyBBTTsyODg0"/>
+        <attribute name="edited" value="SVQtUGFyaztERVNLVE9QLUVHMUYyM1Y7MjAyNi0xMC0zMTsxMTo1ODoyMSBBTTsxOzI5OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="MPG" type="Integer" array="False" size=""/>
+            <declare name="narxi" type="Integer" array="False" size=""/>
+            <declare name="Masofa" type="Integer" array="False" size=""/>
+            <declare name="masofampg" type="Integer" array="False" size=""/>
+            <output expression="&quot;MPGni kiriting&quot;" newline="True"/>
+            <input variable="MPG"/>
+            <output expression="MPG" newline="True"/>
+            <output expression="&quot;Benzin narxini kiriting&quot;" newline="True"/>
+            <input variable="narxi"/>
+            <output expression="&quot;Masofani kiriting&quot;" newline="True"/>
+            <input variable="Masofa"/>
+            <assign variable="masofampg" expression="Masofa/MPG"/>
+            <output expression="narxi*masofampg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
